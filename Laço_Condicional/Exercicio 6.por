@@ -1,9 +1,16 @@
+//Elabore um sistema que dada a idade de um nadador classifique-o em uma das seguintes categorias:
+//Infantil A = 5 a 7 anos
+//Infantil B = 8 a 11 anos
+//Juvenil A = 12 a 13 anos
+//Juvenil B = 14 a 17 anos
+//Adultos = Maiores de 18 anos
+
 programa
 {
 	
 	funcao inicio()
 	{
-		inteiro idade
+		inteiro idade
 
 		escreva("Olá, me diga quantos anos você tem: ")
 		leia(idade)
@@ -33,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 729; 
+ * @POSICAO-CURSOR = 208; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

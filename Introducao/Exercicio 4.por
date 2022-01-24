@@ -1,10 +1,15 @@
+// Escreva um sistema que leia três números inteiros e positivos (A,B,C) e calcula a seguinte expressão:
+//R=(A+B)², S=(B+C)², D=(R+S)/2
+
 programa
 {
+	inclua biblioteca Matematica --> mat
+
+
 	
 	funcao inicio()
 	{
-
-		real a, b, c, d, E, f, calcx, calcy
+		real a, b, c, calcR, calcS, calcD
 
 		escreva("Digite o valor de A: ")
 		leia(a)
@@ -12,18 +17,17 @@ programa
 		leia(b)
 		escreva("Digite o valor de C: ")
 		leia(c)
-		escreva("Digite o valor de D: ")
-		leia(d)
-		escreva("Digite o valor de E: ")
-		leia(E)
-		escreva("Digite o valor de F: ")
-		leia(f)
-		
-		calcx = ((c*E)-(b*f) / (a*E)-(b*d))
-		calcy = ((a*f)-(c*d) / (a*E)-(b*d))
 
-		escreva("O valor de X é: ", calcx, "O valor de Y é: ", calcy)
+		calcR = ((a*a)+(b*b))
+		calcS = ((b*b)+(c*c))
+		calcD = ((calcR + calcS)/2)
+
+			escreva("O resultado dessa expressão é: ", calcD)
 		
+		
+	
+
+	
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 491; 
+ * @POSICAO-CURSOR = 136; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

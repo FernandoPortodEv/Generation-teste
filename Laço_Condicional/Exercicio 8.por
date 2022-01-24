@@ -1,22 +1,21 @@
+//Construa um sistema para ler uma variável numérica N e imprimi-la somente se a mesma for maior que 100, caso contrário imprimi-la com o valor zero.
+
 programa
 {
 	
 	funcao inicio()
 	{
-		
-		inteiro dias, anos, meses, dias_result
+		inteiro N
 
-		escreva("Digite quantos anos você tem em dias: ")
-		leia(dias)
+		escreva("Digite um valor: ")
+		leia(N)
 
-		anos = dias/365
-		meses = anos/30
-		dias_result = dias%365
-
-		escreva("Você tem ", anos, " anos, ", meses, " mês e ", dias_result, " dias")
-		
-		//FALTA VERIFICAR
-		
+		se(N>100){
+			escreva("O valor numérico é: ", N)
+		}
+		senao{
+			escreva("O valor numérico é 0")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -24,7 +23,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 204; 
+ * @POSICAO-CURSOR = 87; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

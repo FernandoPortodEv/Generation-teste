@@ -1,28 +1,24 @@
-//Faça um programa que mostre uma contagem na tela de 233 a 456, só que contando de 3 em 3 quando estiver entre 300 e 400 e de 5 em 5 quando não estiver.
+//Faça um sistema que leia a idade de uma pessoa expressa em dias e mostre-a expressa em anos, meses e dias.
 
 programa
 {
 	
 	funcao inicio()
 	{
-		inteiro contador
-		contador =233
-
 		
-		faca{
-			escreva("\n"+contador)
+		inteiro dias, anos, meses, dias_result
 
-			se(contador>=300 e contador<=400){
-				contador = contador + 3
-			}
-			senao{
-				contador = contador+5
-			}
-			
-			
-		}
+		escreva("Digite quantos anos você tem em dias: ")
+		leia(dias)
 
-		enquanto(contador<=456)
+		anos = dias/365
+		meses = anos/30
+		dias_result = dias%365
+
+		escreva("Você tem ", anos, " anos, ", meses, " mês e ", dias_result, " dias")
+		
+		
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 72; 
+ * @POSICAO-CURSOR = 401; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
